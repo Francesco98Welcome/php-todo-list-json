@@ -1,0 +1,22 @@
+[
+    {
+        "task": "Ritirare in negozio la nuova tavola da surf",
+        "done": false
+    },
+    {
+        "task": "Comprare il regalo per la laurea di Giovanna",
+        "done": true
+    },
+    {
+        "task": "Prenotare un viaggio post corso Boolean",
+        "done": true
+    },
+    {
+        "task": "Aggiustare vetrino iPhone prima che mi si rompe del tutto",
+        "done": false
+    },
+    {
+        "task": "Capirci qualcosa di php",
+        "done": true
+    }
+]
