@@ -3,13 +3,10 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-            apiUrl: '/php-todo-list-json/api.php',
+            apiUrl: './api.php',
             createUrl: './create.php',
             tasksItems: [],
-            newTask: {
-                'new_task': '',
-                'done': false
-            }
+            newTask: '',
         }
     },
     methods: {
@@ -22,10 +19,10 @@ createApp({
                     'Content-Type': 'multipart/form-data'
                 }
             }
-            ).then(() => {
-                this.tasksItems.push({
-                    task: this.newTask.new_task
-                })
+            ).then((response) => {
+                console.log(response);
+                this.tasksItems = response.data
+
             })
         }
     },
@@ -37,3 +34,5 @@ createApp({
             })
     },
 }).mount('#app')
+
+

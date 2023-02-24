@@ -17,7 +17,7 @@
     <div id="app">
         <div class="whatToDo">
             <h1>Todo List</h1>
-            <div id="compiti" v-for="element in tasksItems" :class="!(element.done) ? 'done' : ''">
+            <div id="compiti" v-for="element in tasksItems" :class="(element.done) ? 'done' : ''">
                 {{element.task}}
                 <span><i class="fa-solid fa-trash"></i></span>
 
@@ -26,7 +26,7 @@
         </div>
         <div class="formTask">
             <form action="create.php" method="POST" @submit.prevent="addTask()">
-                <input type="text" v-model="newTask.new_task" placeholder="Inserisci un elemento..." required>
+                <input type="text" v-model="newTask" placeholder="Inserisci un elemento..." required>
                 <button type="submit">Inserisci</button>
             </form>
         </div>
