@@ -18,13 +18,5 @@
     {
         "task": "Capirci qualcosa di php",
         "done": true
-    },
-    {
-        "task": "ciao!!",
-        "done": false
-    },
-    {
-        "task": "ciaoooo",
-        "done": false
     }
 ]
